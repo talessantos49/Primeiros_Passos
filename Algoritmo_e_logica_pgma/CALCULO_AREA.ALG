@@ -1,8 +1,8 @@
 Algoritmo "Calculo_Area"
 
 Var
-   area,resultado, lado, base, altura, base_menor : real
-   figura : inteiro
+   idade,peso : real
+   grupo :
    
 Inicio
       escreval("Escolha a figura geometrica que será calculada a area: ")
