@@ -1,36 +1,25 @@
 #include <stdio.h>
+#include <math.h>
 #include <stdlib.h>
 
 int main (){
-	int numero1, numero2, numero3;
-	printf("Digite o primeiro numero: ");
-	scanf("%d", &numero1);
-	printf("Digite o segundo numero: ");
-	scanf("%d", &numero2);
-	printf("Digite o terceiro numero: ");
-	scanf("%d", &numero3);
+	float a, b, c,delta,x1,x2;
+	printf("Digite o valor de A: ");
+	scanf("%f", &a);
+	printf("Digite o valor de B: ");
+	scanf("%f", &b);
+	printf("Digite o valor de C: ");
+	scanf("%f", &c);
 	
-	if((numero1>numero2) && (numero1>numero3){
-		if (numero2>numero3){
-			printf("A ordem crescente e : %d, %d e %d", numero1, numero2, numero3);
+	delta=((pow(b,2)) - (4*a*c));
+	
+		if (delta>=0){
+			x1 = (-1*b+sqrt(delta))/(2*a);
+			x2 = (-1*b-sqrt(delta))/(2*a);
+			printf("O valor dos X são respectivamente \n x1 = %.2f e x2 = %.2f", x1, x2);
 		}
-		else {
-			printf("A ordem crescente e : %d, %d e %d ", numero1, numero3, numero2);
+		else{
+			printf("Nao existem raizes reais.");
 		}
-	}
-	if ((numero2>numero1) && (numero2>numero3)){
-		if(numero1>numero3){
-			printf("A ordem crescente e : %d, %d e %d", numero2, numero1, numero3);
-		}
-		else {
-			printf("A ordem crescente e : %d , %d e %d", numero2, numero3, numero1);
-		}	
-	}
-	if((numero3>numero1) && (numero3>numero2)){
-		if(numero1>numero2){
-			printf("A ordem crescente e : %d, %d e %d.", numero3, numero1, numero2);
-		}
-		else
-			printf("A ordem crescente e : %d, %d e %d.", numero3, numero2, numero1);
-		} 
+		 
 	}
