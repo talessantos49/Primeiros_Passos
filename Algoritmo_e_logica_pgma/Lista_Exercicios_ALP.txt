@@ -291,31 +291,32 @@ int main (){
 
 
 
-
-
-==============================================================================
-Exercicio 10
-10. Desenvolva um algoritmo que receba a data de nascimento de uma pessoa e a data atual, calcule e mostre se essa pessoa é maior de idade. 
-
-
-
-
-
-
-==============================================================================
+=============================================================================
 Exercicio 11
 11. Desenvolva um algoritmo que receba três valores numérico real, calcule e mostre a média ponderada desses números, considerando que o primeiro número tem peso 2, o segundo número tem peso 3 e o terceiro número tem peso 5. 
 
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main (){
+	float numero1, numero2, numero3, resultado;
+	printf("Digite o primeiro numero: ");
+	scanf("%f", &numero1);
+	printf("Digite o segundo numero: ");
+	scanf("%f", &numero2);
+	printf("Digite o terceiro numero: ");
+	scanf("%f", &numero3);
+	
+	resultado = (((2*numero1)+(3*numero2)+(5*numero3))/10);
+	printf("O resultado dessa conta e : %2.f", resultado);
+}
 
 
 
 ==============================================================================
 Exercicio 12
-12. Desenvolva um algoritmo que receba o preço atual e a venda mensal média de um produto, calcule e mostre o novo preço, sabendo que: 
- se a venda média mensal for menor que 500 e o preço atual menor que 30,00, então o produto sofre um aumento de 10%; 
- se a venda média mensal for maior ou igual a 500 e menor que 1000 e o preço atual maior ou igual a 30,00 e menor que 80,00, então o produto sofre um aumento de 15%; 
- se a venda mensal média for maior ou igual a 1000 e o preço atual maior ou igual a 80,00, então o produto sofre uma diminuição de 5%.  
- Desenvolva um algoritmo que receba o salário de um funcionário, calcule e mostre o valor do aumento salarial e o salário final a ser recebido pelo funcionário, considerando que se o funcionário: 
+12.  Desenvolva um algoritmo que receba o salário de um funcionário, calcule e mostre o valor do aumento salarial e o salário final a ser recebido pelo funcionário, considerando que se o funcionário: 
  - recebe menos que 500,00, terá reajuste de 100%; 
  - recebe mais ou igual a 500,00 e menos que 1.000,00, terá reajuste de 75%; 
  - recebe mais ou igual a 1.000,00 e menos que 1.500,00, terá reajuste de 50%; 
@@ -323,6 +324,54 @@ Exercicio 12
  - recebe mais ou igual a 2.000,00 e menos que 3.000,00, terá reajuste de 10%; 
  - recebe mais ou igual a 3.000,00 e menos que 5.000,00, terá reajuste de 5%; 
  - recebe mais ou igual a 5.000,00, terá reajuste de 2%
+		
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main (){
+	float novo_salario;
+	int salario;
+	printf("Digite o salario atual: ");
+	scanf("%d", salario);
+	
+	switch (salario){
+		case 0 ... 500 :{
+			novo_salario=salario+(salario*1);
+			printf("O novo salario do funcionario e %.2f", &novo_salario);
+			break;
+		}
+		case 501 ... 999:{
+			novo_salario=salario+(salario*0.75);
+			printf("O novo salario do funcionario e %2.f", &novo_salario);
+			break;
+		}
+		case 1000 ... 1500:{
+			novo_salario = salario+(salario*0.50);
+			printf("O novo salario do funcionario e %.2f", novo_salario);
+			break;
+		}
+		case 1501 ... 2000:{
+			novo_salario=salario+(salario*0.25);
+			printf("O novo salario do funcionario e %.2f", &novo_salario);
+			break;
+		}
+		case 2001 ... 3000:{
+			novo_salario=salario+(salario*0.10);
+			printf("O novo salario do funcionario e %2.f", &novo_salario);
+			break;
+		}
+		case 3001 ... 5000:{
+			novo_salario=salario+(salario*0.05);	
+			printf("O novo salario do funcionario e %2.f", &novo_salario);
+			break;
+
+		}
+		default: 
+			novo_salario=salario+(salario*0.02);	
+			printf("O novo salario do funcionario e %2.f", &novo_salario);
+	};
+}
 
 
 

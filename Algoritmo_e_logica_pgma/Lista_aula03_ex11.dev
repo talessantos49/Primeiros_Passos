@@ -1,6 +1,6 @@
 [Project]
-FileName=Lista_aula03_ex09.dev
-Name=Projeto11
+FileName=Lista_aula03_ex11.dev
+Name=Projeto12
 Type=1
 Ver=2
 ObjFiles=
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=ex011.c
+FileName=ex012.c
 CompileCpp=0
 Folder=
 Compile=1
