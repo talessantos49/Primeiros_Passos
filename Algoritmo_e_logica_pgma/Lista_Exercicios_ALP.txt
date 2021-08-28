@@ -21,6 +21,7 @@ int main() {
 	}
 }
 
+
 ==============================================================================
 
 Exercicio 2
@@ -228,12 +229,67 @@ int main (){
 Exercicio 8
 8. Desenvolva um algoritmo que receba um valor numérico inteiro, verifique e mostre se esse valor é divisível por 2 e por 3. 
 
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main (){
+	int numero1, resultado1, resultado2;
+	printf("Digite a primeira numero: ");
+	scanf("%d", &numero1);
+	
+	resultado1= numero1 %2;
+	resultado2= numero1 %3;
+	
+	if((resultado1==0)&& (resultado2==0)){
+		printf("O numero %d eh um numero inteiro divisivel por 2 e 3.", numero1);
+	} 
+	if((resultado1!=0) && (resultado2!=0)){
+		printf("O numero %d nao eh um numero divisivel por 2 e nem por 3.", numero1);
+	}
+	if((resultado1==0) && (resultado2!=0)){
+		printf("O numero %d e divisivel por 2 e nao por 3.", numero1);
+	}
+	if((resultado1!=0) && (resultado2==0)){
+		printf("O numero %d e divisivel por 3 e nao por 2.", numero1);
+	}
+}
 
 
 
 ==============================================================================
 Exercicio 9
-9. Desenvolva um algoritmo que receba os valores da altura e do sexo de uma pessoa, calcule e mostre o peso ideal dessa pessoa, utilizando as seguintes regras:  para homens: (72.7 * altura) – 58;  para mulheres: (62.1 * altura) – 44.7.  
+9. Desenvolva um algoritmo que receba os valores da altura e do sexo de uma pessoa, calcule e mostre o peso ideal dessa pessoa, utilizando as seguintes regras: 
+ para homens: (72.7 * altura) – 58; 
+ para mulheres: (62.1 * altura) – 44.7.  
+
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main (){
+	float altura, resultadoH, resultadoM;
+	int sexo;
+	printf("Digite a sua altura: ");
+	scanf("%f", &altura);
+	
+	resultadoH= ((72.7*altura)-58);
+	resultadoM= ((62.1*altura)-44.7);
+	
+	printf("Digite a opçao referente ao seu sexo sendo: \n[0] para Homem \n[1] para mulher\n");
+	scanf("%d",&sexo);
+	
+	if(sexo==0){
+		printf("O seu peso ideal deveria ser %2.f",resultadoH);
+	}
+	
+	if(sexo==1){
+		printf("O seu peso ideal deveria ser %2.f",resultadoM);
+	}
+}
+
+
+
 
 
 
@@ -255,5 +311,22 @@ Exercicio 11
 
 ==============================================================================
 Exercicio 12
-12. Desenvolva um algoritmo que receba o preço atual e a venda mensal média de um produto, calcule e mostre o novo preço, sabendo que:  se a venda média mensal for menor que 500 e o preço atual menor que 30,00, então o produto sofre um aumento de 10%;  se a venda média mensal for maior ou igual a 500 e menor que 1000 e o preço atual maior ou igual a 30,00 e menor que 80,00, então o produto sofre um aumento de 15%; 
- se a venda mensal média for maior ou igual a 1000 e o preço atual maior ou igual a 80,00, então o produto sofre uma diminuição de 5%.   Desenvolva um algoritmo que receba o salário de um funcionário, calcule e mostre o valor do aumento salarial e o salário final a ser recebido pelo funcionário, considerando que se o funcionário:  - recebe menos que 500,00, terá reajuste de 100%;  - recebe mais ou igual a 500,00 e menos que 1.000,00, terá reajuste de 75%;  - recebe mais ou igual a 1.000,00 e menos que 1.500,00, terá reajuste de 50%;  - recebe mais ou igual a 1.500,00 e menos que 2.000,00, terá reajuste de 25%;  - recebe mais ou igual a 2.000,00 e menos que 3.000,00, terá reajuste de 10%;  - recebe mais ou igual a 3.000,00 e menos que 5.000,00, terá reajuste de 5%;  - recebe mais ou igual a 5.000,00, terá reajuste de 2%
+12. Desenvolva um algoritmo que receba o preço atual e a venda mensal média de um produto, calcule e mostre o novo preço, sabendo que: 
+ se a venda média mensal for menor que 500 e o preço atual menor que 30,00, então o produto sofre um aumento de 10%; 
+ se a venda média mensal for maior ou igual a 500 e menor que 1000 e o preço atual maior ou igual a 30,00 e menor que 80,00, então o produto sofre um aumento de 15%; 
+ se a venda mensal média for maior ou igual a 1000 e o preço atual maior ou igual a 80,00, então o produto sofre uma diminuição de 5%.  
+ Desenvolva um algoritmo que receba o salário de um funcionário, calcule e mostre o valor do aumento salarial e o salário final a ser recebido pelo funcionário, considerando que se o funcionário: 
+ - recebe menos que 500,00, terá reajuste de 100%; 
+ - recebe mais ou igual a 500,00 e menos que 1.000,00, terá reajuste de 75%; 
+ - recebe mais ou igual a 1.000,00 e menos que 1.500,00, terá reajuste de 50%; 
+ - recebe mais ou igual a 1.500,00 e menos que 2.000,00, terá reajuste de 25%; 
+ - recebe mais ou igual a 2.000,00 e menos que 3.000,00, terá reajuste de 10%; 
+ - recebe mais ou igual a 3.000,00 e menos que 5.000,00, terá reajuste de 5%; 
+ - recebe mais ou igual a 5.000,00, terá reajuste de 2%
+
+
+
+
+
+
+
