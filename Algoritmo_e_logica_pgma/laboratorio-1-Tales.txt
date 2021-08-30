@@ -1,14 +1,15 @@
 #include<stdio.h>
 
+// Essa aplicação foi feita em DEVC++ em linguagem C, as variaveis que estão sendo utilizadas estão discriminadas abaixo exceto a variavel res2 que por algum motivo ao ser executado o programa estava pulando uma entrada de informações
+// fora essa divergencia o programa funciona corretamente. 
+// Aluno: Tales Almeida Santos - Turma de DSM - 1º Semestre/2021
+// RA: 1111392121005
+// email: tales.santos6@fatec.sp.gov.br
+
 int main(){
 	char res,ref,res2, nome;
 	int resultado,ordem,retorno, soma_a, soma_b, soma_c,soma_d,a1,a2, a3, a4, a5, b1, b2, b3, b4, b5, c1, c2, c3, c4, c5, d1, d2, d3, d4, d5;
 	retorno=0;
-	
-	
-	printf("\n\n\n************************************************************************************************************************");
-	printf("\n*                                               Vestibular e Voce                                                      *");
-	printf("\n************************************************************************************************************************");
 
 	while (retorno==0){
 	a1=0;
@@ -39,8 +40,7 @@ int main(){
 			
 			case 0:
 				while (ordem==0){
-					printf("\n\n\n************************************************************************************************************************");
-					printf("\n (1) - Voce estudou o ensino medio em escola publica ou particular? ");
+					printf("\n\n\n (1) - Voce estudou o ensino medio em escola publica ou particular? ");
 					
 					printf("\n [a] Totalmente em escola particular. \n [b] Maior parte em escola particular. \n [c] Menor parte em escola particular. \n [d] Totalmente em escola publica.\n\n Resposta:  ");
 					
@@ -78,8 +78,7 @@ int main(){
 				}
 			case 1:
 				while(ordem==1){
-					printf("\n\n\n************************************************************************************************************************");
-					printf("\n (2) - Voce realizou algum curso pre-vestibular? ");
+					printf("\n\n\n (2) - Voce realizou algum curso pre-vestibular? ");
 					
 					printf("\n [a] Sim, entre um ano e dois anos. \n [b] Sim, por tres anos ou mais. \n [c] Sim, por ate um ano. \n [d] Nao, nenhum. \n\n Resposta:  ");
 					
@@ -117,8 +116,7 @@ int main(){
 			}
 			case 2:
 				while(ordem==2){
-					printf("\n\n\n************************************************************************************************************************");
-					printf("\n (3) -  Voce realizou algum outro vestibular? ");
+					printf("\n\n\n (3) -  Voce realizou algum outro vestibular? ");
 					printf("\n [a] Sim, passei em outras faculdades publicas. \n [b] Prestei apenas o vestibular da FATEC. \n [c] Sim, passei em outras faculdades particulares. \n [d] Sim, passei em outras faculdades particulas e publicas.\n\n Resposta:  ");
 					
 					scanf("%c", &res);
@@ -156,8 +154,7 @@ int main(){
 					
 			case 3:
 				while(ordem==3){				
-					printf("\n\n\n************************************************************************************************************************");
-					printf("\n (4) -  Voce possui alguma outra graduacao? ");
+					printf("\n\n\n (4) -  Voce possui alguma outra graduacao? ");
 					printf("\n [a] Sim, sou formado em outra instituicao particular \n [b] Sim, sou formado em outra instituicao publica. \n [c] Nao sou formado, porem cursei. \n [d] Nao sou formado e nem cursei outra graduacao.\n\n Resposta:  ");
 					
 					scanf("%c", &res);	
@@ -194,9 +191,8 @@ int main(){
 				}
 				
 			case 4:
-				while(ordem==4){
-					printf("\n\n\n************************************************************************************************************************");	
-					printf("\n (5) - Voce se formou em algum curso tecnico? ");
+				while(ordem==4){	
+					printf("\n\n\n (5) - Voce se formou em algum curso tecnico? ");
 					printf("\n [a] Sim, estudei e me formei na ETEC \n [b] Sim, realizei curso tecnico em outra instituicao \n [c] Sim, porem nao me formei \n [d] Nao, nunca realizei curso tecnico.\n\n Resposta:  ");
 								
 					scanf("%c", &res);				
