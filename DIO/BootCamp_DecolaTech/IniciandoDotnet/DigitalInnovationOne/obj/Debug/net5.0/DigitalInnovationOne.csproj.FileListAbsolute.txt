@@ -1,0 +1,16 @@
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\bin\Debug\net5.0\DigitalInnovationOne.exe
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\bin\Debug\net5.0\DigitalInnovationOne.deps.json
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\bin\Debug\net5.0\DigitalInnovationOne.runtimeconfig.json
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\bin\Debug\net5.0\DigitalInnovationOne.runtimeconfig.dev.json
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\bin\Debug\net5.0\DigitalInnovationOne.dll
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\bin\Debug\net5.0\ref\DigitalInnovationOne.dll
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\bin\Debug\net5.0\DigitalInnovationOne.pdb
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.csproj.AssemblyReference.cache
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.AssemblyInfoInputs.cache
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.AssemblyInfo.cs
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.csproj.CoreCompileInputs.cache
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.dll
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\obj\Debug\net5.0\ref\DigitalInnovationOne.dll
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.pdb
+C:\Users\tales\Desktop\Programas\Primeiros_Passos\DIO\BootCamp_DecolaTech\IniciandoDotnet\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.genruntimeconfig.cache
