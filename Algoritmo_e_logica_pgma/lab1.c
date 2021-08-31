@@ -231,8 +231,8 @@ int main(){
 							printf("\n\nDigite uma resposta valida.");
 						}
 			}
-			
-			printf("\n\n\n Seu resultado eh: %d", resultado);
+			printf("\n\n\n************************************************************************************************************************");
+			printf("\n\n\n Seu resultado foi: %d", resultado);
 			
 			soma_a=a1+a2+a3+a4+a5;
 			
@@ -244,50 +244,47 @@ int main(){
 			
 				
 			if (soma_a==0){
-				printf("\nAlternativa 'a' (vale 10 Pontos) - Nenhuma vez.");
+				printf("\n Alternativa 'a' (vale 10 Pontos) - Nenhuma vez.");
 			}
 			if (soma_a==1){
-				printf("\nAlternativa 'a' (Vale 10 Pontos) - 1 vez.");
+				printf("\n Alternativa 'a' (Vale 10 Pontos) - 1 vez.");
 			}
 			if((soma_a!=0) && (soma_a!=1)){
-				printf("\nAlternativa 'a' (Vale 10 Pontos) - %d Vezes", soma_a);
+				printf("\n Alternativa 'a' (Vale 10 Pontos) - %d Vezes", soma_a);
 			}
 			
 			if (soma_b==0){
-				printf("\nAlternativa 'b' (vale 5 Pontos) - Nenhuma vez.");
+				printf("\n Alternativa 'b' (vale 5 Pontos) - Nenhuma vez.");
 			}
 			if (soma_b==1){
-				printf("\nAlternativa 'b' (Vale 5 Pontos) - 1 vez.");
+				printf("\n Alternativa 'b' (Vale 5 Pontos) - 1 vez.");
 			}
 			if((soma_b!=0) && (soma_b!=1)){
-				printf("\nAlternativa 'b' (Vale 5 Pontos) - %d Vezes", soma_b);
+				printf("\n Alternativa 'b' (Vale 5 Pontos) - %d Vezes", soma_b);
 			}
 			
 			if (soma_c==0){
-				printf("\nAlternativa 'c' (vale 3 Pontos) - Nenhuma vez.");
+				printf("\n Alternativa 'c' (vale 3 Pontos) - Nenhuma vez.");
 			}
 			if (soma_c==1){
-				printf("\nAlternativa 'c' (Vale 3 Pontos) - 1 vez.");
+				printf("\n Alternativa 'c' (Vale 3 Pontos) - 1 vez.");
 			}
 			if ((soma_c!=0) && (soma_c!=1)){
-				printf("\nAlternativa 'c' (Vale 3 Pontos) - %d Vezes", soma_c);
+				printf("\n Alternativa 'c' (Vale 3 Pontos) - %d Vezes", soma_c);
 			}			
 			
 			if (soma_d==0){
-				printf("\nAlternativa 'd' (vale 1 Pontos) - Nenhuma vez.");
+				printf("\n Alternativa 'd' (vale 1 Pontos) - Nenhuma vez.");
 			}
 			if (soma_d==1){
-				printf("\nAlternativa 'd' (Vale 1 Pontos) - 1 vez.");
+				printf("\n Alternativa 'd' (Vale 1 Pontos) - 1 vez.");
 			}
 			if((soma_d!=0) && (soma_d!=1)){
-				printf("\nAlternativa 'd' (Vale 1 Pontos) - %d Vezes", soma_d);
+				printf("\n Alternativa 'd' (Vale 1 Pontos) - %d Vezes", soma_d);
 			}
 			
 		}
 		
-		
-		printf("\n\nSeu resultado foi: %d. ", resultado);
-
 		if (resultado>=50){
 			printf("\n\n\n Provavelmente voce teve uma estrutura familiar mais privilegiada e conseguiu estudar em melhores escolas e ter mais chances pra poder adentrar em uma universidade publica renomada.");
 		}
