@@ -1,6 +1,5 @@
 body{
-  background-color: grey;
-  /*background-image:url(../imagem/bgcss.jpg);*/
+  background-image:url(../imagem/bgcss.jpg);
 }
 #topo{
   width: 100%;
