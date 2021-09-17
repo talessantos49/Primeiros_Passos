@@ -1,14 +1,31 @@
 body{
-  background-color: grey;
+  background-color: gray;
   /*background-image:url(../imagem/bgcss.jpg);*/
 }
 #topo{
   width: 100%;
   height: auto;
 }
-#topo_css{
+#imagem_center{
   width: 250px;
   height: 200px;
+  margin-left: 35em;
+  margin-right: auto;
+  align-items: center;
+}
+#imagem_center_larga{
+  width: 650px;
+  height: 200px;
+  margin-left: 25em;
+  margin-right: auto;
+  align-items: center;
+}
+#imagem_center_comprida{
+  width: 250px;
+  height: 350px;
+  margin-left: 35em;
+  margin-right: auto;
+  align-items: center;
 }
 #conteudo{
   width: 100%;
@@ -20,7 +37,7 @@ h1{
 }
 .paragrafo{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   text-align: justify;
 }
 #rodape{
