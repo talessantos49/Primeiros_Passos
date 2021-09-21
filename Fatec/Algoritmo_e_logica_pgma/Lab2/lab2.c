@@ -152,6 +152,10 @@ while ((repetir=='s') || (repetir=='S')) {
 					else {
 						validacao=1;
 					}	
+					
+
+	printf("\nSeu voto foi no candidato : %s", voto2);
+
 	while (validacao==1){
 		printf("\n\n VOTO INVALIDO!!! TENTE NOVAMENTE!!");
 		printf("\n\n Eleitor %d", computados);
@@ -295,7 +299,7 @@ while ((repetir=='s') || (repetir=='S')) {
 	else if ((candv4>candv1) && (candv4>candv3) && (candv4>candv2)){
 		printf("\nCandidato a Vereador mais votado: Candidato 4  com %d Votos", candv4);		
 	}
-		
+	
 	else if ((candv1==candv2) && (candv1>candv3) && (candv1>candv4)){
 		printf("\nTemos um empate entre o Primeiro e o segundo colocado: Candidato 1 e Candidato 2 com %d votos", candv1);
 	}
@@ -329,7 +333,6 @@ while ((repetir=='s') || (repetir=='S')) {
 	else if ((candv1==candv4) && (candv1==candv2) && (candv1==candv3)){
 		printf("\n Temos um empate entre os todos os candidatos com um total de %d votos", candv1);
 	}
-	
 
 	return 0;
 }
