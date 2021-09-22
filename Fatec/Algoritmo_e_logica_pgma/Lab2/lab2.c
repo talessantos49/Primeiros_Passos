@@ -4,22 +4,22 @@
 #include <string.h>
 
 int main() {
-	char zona, repetir='s', voto1[2], voto2[2];
+	char zona[1], repetir='s', voto1[2], voto2[2];
 	int eleitores, identificacao, candc1=0, candc2=0, candc3=0, candc4=0, candvb=0, candvn=0, computados=0, totalcomp;
 	int candv1=0, candv2=0, candv3=0, candv4=0, vb=0, vn=0, validacao, resultado, votospdb, votospsb, totalpref, totalpref_branco,totalver, totalver_branco; 
 	
 	
-printf("\n\n\n/************************************************/\n");
-printf("/* Aluno1: Fabio Florencio de Mendonca		*/\n");
-printf("/* Aluno2: Fernando Jose da Silva  		*/\n");
-printf("/* Aluno3: Fernando Morais Bonfim 		*/\n");
-printf("/* Aluno4: Tales Almeida Santos 		*/\n");
-printf("/* TURMA: DSM - 1  Semestre 			*/\n");
-printf("/* Profa. Eliane 				*/\n");
-printf("/************************************************/\n");	
+printf("\n\n\n/****************************************************************/\n");
+printf("/* Aluno1: Fabio Florencio de Mendonca RA: 1111392121037	*/\n");
+printf("/* Aluno2: Fernando Jose da Silva RA:  1111392121025		*/\n");
+printf("/* Aluno3: Fernando Morais Bonfim RA: 1111392121043		*/\n");
+printf("/* Aluno4: Tales Almeida Santos RA: 1111392121005		*/\n");
+printf("/* TURMA: DSM - 1  Semestre 					*/\n");
+printf("/* Profa. Eliane 						*/\n");
+printf("/****************************************************************/\n");	
 
 printf("\n\n Identificacao da secao e zona eleitoral......:  ");
-scanf("%s", &zona);
+scanf("%s", zona);
 printf("\n\n Total dos eleitores que podem votar..........:  ");
 scanf("%d", &eleitores);
 printf("\n\n Codigo de identificacao da urna eletronica...:  ");
@@ -214,7 +214,7 @@ while ((repetir=='s') || (repetir=='S')) {
 	votospdb=(candc1+candc2+candv1+candv2);
 	votospsb=(candc3+candc4+candv3+candv4);
 	
-	printf("\nIdentificacao da secao e da zona eleitoral:  %s ", &zona);
+	printf("\nIdentificacao da secao e da zona eleitoral:  %s ", zona);
 	printf("\nTotal de eleitores que podem votar:  %d ", eleitores);
 	printf("\nTotal de eleitores que votaram:  %d ",computados);
 	printf("\nTotal de eleitores que faltaram:  %d ",totalcomp);
