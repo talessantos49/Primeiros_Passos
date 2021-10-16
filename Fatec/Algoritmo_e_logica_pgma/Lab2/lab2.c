@@ -287,52 +287,32 @@ while ((repetir=='s') || (repetir=='S')) {
 		printf("\n Temos um empate entre os todos os candidatos com um total de %d votos", candc1);
 	}
 	
-	if ((candv1>candv2) && (candv1>candv3) && (candv1>candv4)){
-		printf("\nCandidato a Vereador mais votado: Candidato 1 com %d Votos", candv1);
-	}
-	else if ((candv2>candv1) && (candv2>candv3) && (candv2>candv4)){
-		printf("\nCandidato a Vereador mais votado: Candidato 2 com %d Votos", candv2);		
-	}
-	else if ((candv3>candv1) && (candv3>candv2) && (candv3>candv4)){
-		printf("\nCandidato a Vereador mais votado: Candidato 3 com %d Votos", candv3);		
-	}
-	else if ((candv4>candv1) && (candv4>candv3) && (candv4>candv2)){
-		printf("\nCandidato a Vereador mais votado: Candidato 4  com %d Votos", candv4);		
-	}
+	if ((candv1>candv2) && (candv1>candv3) && (candv1>candv4))			printf("\nCandidato a Vereador mais votado: Candidato 1 com %d Votos", candv1);
 	
-	else if ((candv1==candv2) && (candv1>candv3) && (candv1>candv4)){
-		printf("\nTemos um empate entre o Primeiro e o segundo colocado: Candidato 1 e Candidato 2 com %d votos", candv1);
-	}
-	else if ((candv1==candv3) && (candv1>candv2) && (candv1>candv4)){
-		printf("\nTemos um empate entre o Primeiro e o segundo colocado: Candidato 1 e Candidato 3 com %d votos", candv1);
-	}
-	else if ((candv1==candv4) && (candv1>candv2) && (candv1>candv3)){
-		printf("\nTemos um empate entre o Primeiro e o segundo colocado: Candidato 1 e Candidato 4 com %d votos", candv1);
-	}
-	else if ((candv2==candv3) && (candv2>candv1) && (candv2>candv4)){
-		printf("\nTemos um empate entre o Primeiro e o segundo colocado: Candidato 2 e Candidato 3 com %d votos", candv2);
-	}
-	else if ((candv2==candv4) && (candv2>candv1) && (candv2>candv3)){
-		printf("\nTemos um empate entre o Primeiro e o segundo colocado: Candidato 2 e Candidato 4 com %d votos", candv2);
-	}
-	else if ((candv3==candv4) && (candv3>candv1) && (candv3>candv2)){
-		printf("\nTemos um empate entre o Primeiro e o segundo colocado: Candidato 3 e Candidato 4 com %d votos", candv3);
-	}
-	else if ((candv3==candv4) && (candv3==candv2) && (candv3>candv1)){
-		printf("\n Temos um empate entre os Tres primeiros colocados: Candidato 2, Candidato 3 e Candidato 4 com %d votos", candv3);
-	}
-	else if ((candv1==candv4) && (candv1==candv2) && (candv1>candv3)){
-		printf("\n Temos um empate entre os Tres primeiros colocados: Candidato 1, Candidato 2 e Candidato 4 com %d votos", candv1);
-	}
-	else if ((candv1==candv2) && (candv1==candv3) && (candv1>candv4)){
-		printf("\n Temos um empate entre os Tres primeiros colocados: Candidato 1, Candidato 2 e Candidato 3 com %d votos", candv1);
-	}
-	else if ((candv1==candv3) && (candv1==candv4) && (candv1>candv2)){
-		printf("\n Temos um empate entre os Tres primeiros colocados: Candidato 1, Candidato 3 e Candidato 4 com %d votos", candv1);
-	}
-	else if ((candv1==candv4) && (candv1==candv2) && (candv1==candv3)){
-		printf("\n Temos um empate entre os todos os candidatos com um total de %d votos", candv1);
-	}
+	else if ((candv2>candv1) && (candv2>candv3) && (candv2>candv4))		printf("\nCandidato a Vereador mais votado: Candidato 2 com %d Votos", candv2);		
+	
+	else if ((candv3>candv1) && (candv3>candv2) && (candv3>candv4))		printf("\nCandidato a Vereador mais votado: Candidato 3 com %d Votos", candv3);		
+	
+	else if ((candv4>candv1) && (candv4>candv3) && (candv4>candv2))		printf("\nCandidato a Vereador mais votado: Candidato 4  com %d Votos", candv4);		
+	
+	else if ((candv1==candv2) && (candv1>candv3) && (candv1>candv4))	printf("\nTemos um empate entre o Primeiro e o segundo colocado: Candidato 1 e Candidato 2 com %d votos", candv1);
+
+	else if ((candv1==candv3) && (candv1>candv2) && (candv1>candv4))	printf("\nTemos um empate entre o Primeiro e o segundo colocado: Candidato 1 e Candidato 3 com %d votos", candv1);
+	
+	else if ((candv1==candv4) && (candv1>candv2) && (candv1>candv3))	printf("\nTemos um empate entre o Primeiro e o segundo colocado: Candidato 1 e Candidato 4 com %d votos", candv1);
+	
+	else if ((candv2==candv3) && (candv2>candv1) && (candv2>candv4)) 	printf("\nTemos um empate entre o Primeiro e o segundo colocado: Candidato 2 e Candidato 3 com %d votos", candv2);	
+	
+	else if ((candv2==candv4) && (candv2>candv1) && (candv2>candv3))	printf("\nTemos um empate entre o Primeiro e o segundo colocado: Candidato 2 e Candidato 4 com %d votos", candv2);
+
+	else if ((candv3==candv4) && (candv3>candv1) && (candv3>candv2))	printf("\nTemos um empate entre o Primeiro e o segundo colocado: Candidato 3 e Candidato 4 com %d votos", candv3);
+	
+	else if ((candv3==candv4) && (candv3==candv2) && (candv3>candv1))	printf("\n Temos um empate entre os Tres primeiros colocados: Candidato 2, Candidato 3 e Candidato 4 com %d votos", candv3);
+	
+	else if ((candv1==candv4) && (candv1==candv2) && (candv1>candv3))	printf("\n Temos um empate entre os Tres primeiros colocados: Candidato 1, Candidato 2 e Candidato 4 com %d votos", candv1);
+	else if ((candv1==candv2) && (candv1==candv3) && (candv1>candv4))	printf("\n Temos um empate entre os Tres primeiros colocados: Candidato 1, Candidato 2 e Candidato 3 com %d votos", candv1);
+	else if ((candv1==candv3) && (candv1==candv4) && (candv1>candv2))	printf("\n Temos um empate entre os Tres primeiros colocados: Candidato 1, Candidato 3 e Candidato 4 com %d votos", candv1);
+	else if ((candv1==candv4) && (candv1==candv2) && (candv1==candv3))	printf("\n Temos um empate entre os todos os candidatos com um total de %d votos", candv1);
 
 	return 0;
 }
