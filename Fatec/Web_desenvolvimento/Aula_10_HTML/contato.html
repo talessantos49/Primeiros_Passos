@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <!--Idioma principal da pagina.-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aula comentarios, metadados, listas e layout"/>
+    <meta name="keywords" content="HTML, Comentarios, Listas, Layout, Elementos semanticos"/>
+    <meta name="author" content="Tales Almeida Santos" />
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <link rel="icon" href="imagem/kerotanz.ico" type="image/x-icon">
+    <title>Aula 9</title>
+  </head>
+  <body>
+    <header id="topo">
+      <div id="acessibilidade">
+        <ul id="atalhos">
+          <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteudo">Ir para o conteúdo [1]</a>
+          </li>
+          <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir diretamente para o menu [2]</a></li>
+          <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé"> Ir diretamente para o rodapé [3]</a></li>
+          <li id="pgacess"><a href="acessibilidade.html" title="Ir para a pagina de acessibilidade">Acessibilidade</a></li>
+          <li class="contraste"><a href="javascript:void(0);" id="contraste">Constrate preto</a></li>
+          <li class="contraste"><a href="javascript:void(0);" id="sem_contraste">Sem contraste</a></li>
+          <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+          <li class="fonte"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+        </ul>
+      </div>
+      <img id="imagem_center"
+        src="imagem/kerotanz.png"
+        alt="imagem com a logo da kerotanz holders, um sapo quadrilhado"
+      />
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="index.html">Inicio</a></li>
+          <li ><a href="comentarios.html">Comentarios</a></li>
+          <li><a href="metadados.html">Metadados</a></li>
+          <li><a href="contato.html">Contatos</a></li>
+          <li><a href="#">Listas</a>
+            <ul>
+              <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+              <li><a href="lista_nao_ordenada.html">Lista Não Ordenada</a></li>
+            </ul>
+          </li>
+          <li><a href="layout.html">Layout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--Conteudo principal da pagina-->
+      <h1>FALE CONOSCO</h1>
+      <section>
+        <audio controls>
+          <source src="audio/Contatos.mp3" type="audio/mp3" />
+          Este navegador não suporta o elemento de audio ou o formato de arquivo
+          utilizado.
+        </audio>
+        <form name="contato" id="contato" method="POST">
+          <fieldset id="alinhamento">
+            <legend>Dados Pessoais</legend>
+              <label for="nome" class="required">Nome</label><br>
+              <input type="text" name="nome" id="nome" required placeholder="Nome Completo"><br>
+              <label for="cpf" class="required">CPF</label><br>
+              <input type="text" name="cpf" id="cpf" required
+              placeholder="999.999.999-99"><br>
+              <label for="data" class="required">Data de Nascimento</label><br>
+              <input type="date" name="data" id="data" required><br>
+              <label for="telefone">Telefone</label><br>
+              <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999"><br>
+              <label for="celular">Celular</label><br>
+              <input type="tel" name="celular" id="celular" placeholder="(99) 99999-9999"><br>
+              <label for="email" class="required">E-mail</label><br>
+              <input type="email" name="email" id="email" required placeholder="nome@site.com.br"> <br>
+          </fieldset>
+          <fieldset id="alinhamento">
+            <legend>Dados de endereço</legend>
+            <label for="cep" class="required">CEP</label><br>
+            <input type="text" name="cep" id="cep" required placeholder="99999-999"><br>
+            <label for="rua">Rua</label><br>
+            <input type="text" name="rua" id="rua"><br>
+            <label for="numero" class="required">Número</label><br>
+            <input type="number" name="numero" id="numero" required><br>
+            <label for="complemento">Complemento</label><br>
+            <input type="text" name="complemento" id="complemento"><br>
+            <label for="bairro">Bairro</label><br>
+            <input type="text" name="bairro" id="bairro"><br>
+            <label for="cidade">Cidade</label><br>
+            <input type="text" name="cidade" id="cidade"><br>
+            <label for="estado">Estado</label><br>
+            <input type="text" name="estado" id="estado"><br>
+          </fieldset>
+          <fieldset id="alinhamento">
+            <legend>Dados da mensagem</legend>
+            <label for="assunto" class="required">Assunto</label><br>
+            <select name="assunto" id="assunto" required>
+              <option value="" selected disabled>Selecione um Assunto</option>
+              <option value="Dúvida">Dúvida</option>
+              <option value="Elogio">Elogio</option>
+              <option value="Reclamação">Reclamação</option>
+            </select><br>
+            <label for="mensagem" class="required">Mensagem</label><br>
+            <textarea name="mensagem" id="mensagem" placeholder="Digite a mensagem aqui" rows="10" cols="50" required></textarea>
+          </fieldset>
+          <input type="submit" name="enviar" id="enviar" value="Enviar">
+          <input type="reset" name="limpar" id="limpar" value="Limpar">
+        </form>
+      </section>
+    </main>
+    <footer id="rodape"><p>Desenvolvido por KerotanZ Holders &copy;2021.</p></footer>
+  </body>
+</html>
