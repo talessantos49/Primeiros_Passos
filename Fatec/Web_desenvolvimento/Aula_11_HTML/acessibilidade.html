@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <!--Idioma principal da pagina.-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aula comentarios, metadados, listas e layout"/>
+    <meta name="keywords" content="HTML, Comentarios, Listas, Layout, Elementos semanticos"/>
+    <meta name="author" content="Tales Almeida Santos" />
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <link rel="icon" href="imagem/kerotanz.ico" type="image/x-icon">
+    <title>Aula 11</title>
+  </head>
+  <body>
+    <header id="topo">
+      <div id="acessibilidade">
+        <ul id="atalhos">
+          <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteudo">Ir para o conteúdo [1]</a>
+          </li>
+          <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir diretamente para o menu [2]</a></li>
+          <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé"> Ir diretamente para o rodapé [3]</a></li>
+          <li id="pgacess"><a href="acessibilidade.html" title="Ir para a pagina de acessibilidade">Acessibilidade</a></li>
+          <li class="contraste"><a href="javascript:void(0);" id="contraste">Constrate preto</a></li>
+          <li class="contraste"><a href="javascript:void(0);" id="sem_contraste">Sem contraste</a></li>
+          <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+          <li class="fonte"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+        </ul>
+      </div>
+      <img id="imagem_center"
+        src="imagem/kerotanz.png"
+        alt="imagem com a logo da kerotanz holders, um sapo quadrilhado"
+      />
+      <nav>
+        <label for="bt_menu"><img src="imagem/botao-de-menu.png" alt="menu"></label>
+        <input type="checkbox" id="bt_menu">
+        <ul id="menu">
+          <li>
+            <a href="index.html">Inicio</a></li>
+          <li ><a href="comentarios.html">Comentarios</a></li>
+          <li><a href="metadados.html">Metadados</a></li>
+          <li><a href="contato.html">Contatos</a></li>
+          <li><a href="#">Listas</a>
+            <ul>
+              <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+              <li><a href="lista_nao_ordenada.html">Lista Não Ordenada</a></li>
+            </ul>
+          </li>
+          <li><a href="layout.html">Layout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--Conteudo principal da pagina-->
+      <h1>Acessibilidade</h1>
+      <ul class="breadcrumb">
+        <li><a href="index.html">Inicio</a></li>
+        <li>Acessibilidade</li>
+      </ul>
+      <section>
+        <!--<audio controls>
+          <source src="audio/musica.mp3" type="audio/mp3">
+          Este navegador não suporta o elemento de audio ou o formato de arquivo utilizado.
+        </audio>-->
+        <h2 id="topo">Comentarios, Metadados, Listas e Layout</h2>
+        <p>
+          Este site foi desenvolvido para que pessoas com deficiência visual, baixa visão, daltonismo, deficiência auditiva e mobilidade reduzida possam navegar por meio de recursos como alto contraste, aumento de fonte, teclas de atalho, tradução para a Língua Brasileira de Sinais e navegação por teclado.</p>
+
+          <p> Para aumentar a fonte, é só clicar no símbolo de A+ em nossa barra de acessibilidade. Caso queira voltar ao tamanho de fonte original, é só clicar em A-.</p>
+          
+          <p>Se for necessário, você também pode usar o zoom nativo do seu navegador, pressionando as teclas “Ctrl” e “+” para aumentar todo o site e “Ctrl” e “-“ para diminuir. Para voltar ao padrão, pressione “Ctrl” e “0”.</p>
+          
+          <p> Este site tem melhor acessibilidade quando acessado nas versões mais atualizadas do seu navegador web. Utilize sempre a versão mais recente de seu software.</p>
+          
+          <p> Teclas de atalho por navegadores</p>
+          
+          <p> Internet Explorer e Google Chrome:</p>
+          
+          <p> “Alt” + “1” - ir para o conteúdo</p>
+          
+          <p> “Alt” + “2” - ir para o menu</p>
+          
+          <p> “Alt” + “3” - ir para o rodapé</p>
+          
+          <p> Firefox:</p>
+          
+          <p>  “Alt” + “Shift” + “número”</p>
+          
+          <p>  Opera:</p>
+          
+          <p> “Shift” + “Escape” + “número”</p>
+          
+          <p> Safari e OmniWeb:</p>
+          
+          <p> “Ctrl” + “número”</p>
+          
+          <p> Navegação por tabulação</p>
+          
+          <p> Use a tecla Tab para navegar por elementos que recebem ação do usuário no site, tais como links, botões, campos de formulário e outros na ordem em que eles são apresentados na página, e Shift + Tab para retornar. Use as setas direcionais para acessar as informações textuais.</p>
+          
+          <p> Sugestões de programas disponíveis para pessoas com deficiência</p>
+          
+          <p> - Nitrous Voice Flux: controla o computador por voz. Gratuito;</p>
+          
+          <p> - NVDA: software livre para ler tela – vários idiomas (Windows);</p>
+          
+          <p> - YeoSoft Text: leitor de tela em inglês e português;</p>
+          
+          <p> - Jaws for Windows: leitor de tela – vários idiomas;</p>
+          
+          <p> - Virtual Vision: leitor de telas em português do Brasil;</p>
+          
+          <p>- DOSVOX: sistema para deficientes visuais (Windows ou Linux).</p>
+          
+          <p> - Talckback: leitor de tela disponível em smartphones Android.</p>
+          
+          <p> Observação: leia no manual do leitor de telas sobre a melhor forma de navegação em páginas web.</p>
+          
+          
+          <p> LIBRAS - Língua Brasileira de Sinais</p>
+          
+          <p> Este site é acessível em LIBRAS através do VLibras.</p>
+          
+          <p> -Do lado direito de cada página do site existe o ícone de um Widget informando que o site é acessível em LIBRAS.</p>
+          
+          <p> -Para traduzir, basta clicar sobre o ícone e selecionar o texto que deseja traduzir.
+        </p>
+      </section>
+    </main>
+    <footer id="rodape"><p>Desenvolvido por KerotanZ Holders &copy;2021.</p></footer>
+  </body>
+</html>
