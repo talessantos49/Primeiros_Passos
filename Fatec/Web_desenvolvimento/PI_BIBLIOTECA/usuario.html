@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula Comentários,metadados, listas e layout"> 
+    <meta name="keywords" content="HTML,Comentários,Lists, Layout, Elementos Semânticos">
+    <meta name="Author" content="Fábio">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="favicon.ico" type=image/x-icon>
+    <title>Aula 5</title>
+</head>
+<body>
+    <header id="top">
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">                    
+                Ir para o conteúdo [1]</a></li>
+                <li><a href="#menu" acceskey="2" title="Ir diretamente para o menu">
+                Ir para o menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">                    
+                Ir para o rodapé [3]</a></li>                
+
+                <li id="pgAcess"><a href="acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBLIDADE</a></li                                  >
+                <li class="contraste"><a href="javacript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+                <li class="contraste"><a href="javacript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javacript:void(0);" id="">A+</a></li>
+                <li class="fonte"><a href="javacript:void(0);" id="">A-</a></li>
+            </ul>
+        </div>
+        <img id="logoHeader" src="Imagem/fatecT.png" alt="logo Fatec Zona leste" height="200" width="200">
+        <img id="logoHeaderLogin" src="Imagem/login-removebg-preview.png" alt="imagem com a representação de icono de login">
+        <article class="article3">
+            <p>Usuário</p>
+        </article>
+        <nav>
+            <label for="bt_menu"><img src="Imagem/botaoHamburguer1.png" alt="imagem com três barra em formato horizontal"></label> 
+            <input type="checkbox" id="bt_menu"><!--Esse menu só aparece quando diminui a janela ou dispositivo-->
+            <ul id="menu">
+                <li><a href="index.html">Início</a></li>                                
+                <li><a href="javascript:void(0);">Perfil</a><!--Sub menu-->
+                    <ul>
+                        <li><a href="administrador.html">Administrador</a></li>
+                        <li><a href="Usuario.html">Usuário</a></li>
+                    </ul>
+                </li>                                
+                <li><a href="contato.html">Contato</a></li>
+            </ul>    
+        </nav>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+    </header>
+    <main id="conteudoAdmAluno">        
+        <h1>Usuário</h1>
+        <ul class="breadcrumb"><!--Breadcrumb-->
+            <li><a href="index.html">Início</a></li>
+            <li><a href="javascript:void(0);">Perfil</a></li>
+            <li>Usuário</li>
+        </ul>
+        <section>                                                
+                <a class="teste" href="javacript:void(0);">Dados Pessoais</a>
+                <a class="teste" href="javacript:void(0);">Histórico</a>
+                <a class="teste" href="index.html">Consulta Acervo</a>                             
+                <a class="teste" href="javacript:void(0);">Reserva</a>                            
+                <a class="teste" href="javacript:void(0);">Pendência</a>                            
+                <a class="teste" href="contato.html">Contato</a>                                                    
+        </section>    
+    </main>
+    <footer id="rodape">
+        <img id="logoHeader2" src="Imagem/ceeteps.png" alt="imagem com a palavra Centro Paula Souza em cinza e a imagem da bandeira do estado de São Paulo">        
+        <article class="article1">            
+            <p class="txtRodape">Fatec de Tecnologia da Zona Leste</p>
+            <p class="txtRodape">Avenida Águia de Haia, 2983</p>
+            <p class="txtRodape">(11) 2041-2187</p>
+            <p class="txtRodape">f11bili@cps.sp.gov.br</p>            
+        </article>            
+        <article class="article2">            
+            <p class="txtRodape">Atendimento</p>
+            <p class="txtRodape">Segunda á Sexta</p>
+            <p class="txtRodape">Horário:8:00 / 21:45</p>
+        </article>        
+    </footer>
+    <article>
+        <p id="rodapeCredito">Desenvolvido por Fábio Florêncio de Mendonça e Tales Almeida Santos &copy; 2021</p>
+    </article>
+</body>
+</html>

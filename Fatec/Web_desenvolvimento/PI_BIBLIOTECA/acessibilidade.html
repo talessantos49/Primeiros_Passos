@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula Comentários,metadados, listas e layout"> 
+    <meta name="keywords" content="HTML,Comentários,Lists, Layout, Elementos Semânticos">
+    <meta name="Author" content="Fábio">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="favicon.ico" type=image/x-icon>
+    <title>Aula 5</title>
+</head>
+<body>
+    <header id="top"><!--Top da página-->
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">                    
+                Ir para o conteúdo [1]</a></li>
+                <li><a href="#menu" acceskey="2" title="Ir diretamente para o menu">
+                Ir para o menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">                    
+                Ir para o rodapé [3]</a></li>                
+
+                <li id="pgAcess"><a href="acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBLIDADE</a></li                                  >
+                <li class="contraste"><a href="javacript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+                <li class="contraste"><a href="javacript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javacript:void(0);" id="">A+</a></li>
+                <li class="fonte"><a href="javacript:void(0);" id="">A-</a></li>
+            </ul>
+        </div>
+        <img id="logoHeader" src="Imagem/fatecT.png" alt="imagem coma palavra Fatec em cinza e a expressão Zona Leste em vermelho">
+        <img id="logoHeaderLogin" src="Imagem/login-removebg-preview.png" alt="imagem com a representação de icono de login">
+        <article class="article3">
+            <p>Usuário</p>
+        </article>
+        <nav>
+            <label for="bt_menu"><img src="Imagem/botaoHamburguer1.png" alt="imagem com três barra em formato horizontal"></label> 
+            <input type="checkbox" id="bt_menu"><!--Esse menu só aparece quando diminui a janela ou dispositivo-->
+            <ul id="menu">
+                <li><a href="index.html">Início</a></li>                
+                <li><a href="javascript:void(0);">Perfil</a><!--Sub menu-->
+                    <ul>
+                        <li><a href="administrador.html">Administrador</a></li>
+                        <li><a href="usuario.html">Usuário</a></li>
+                    </ul>
+                </li>                
+                <li><a href="contato.html">Contato</a></li>
+            </ul>    
+        </nav>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+    </header>
+    <main id="conteudo"><!-- Conteúdo principal da página-->
+        <h1>Recursos de acessibilidade</h1>
+        <ul class="breadcrumb"><!--Breadcrumb-->
+            <li><a href="index.html">Início</a></li>
+            <li>Acessibilidade</li>
+        </ul>
+        <section>                    
+        <p> Este site foi desenvolvido para que pessoas com deficiência visual, baixa visão, daltonismo, 
+        deficiência auditiva e mobilidade reduzida possam navegar por meio de recursos como alto contraste,
+        aumento de fonte, teclas de atalho, tradução para a Língua Brasileira de Sinais e navegação por teclado.</p>        
+        <p>Para aumentar a fonte, é só clicar no símbolo de A+ em nossa barra de acessibilidade. Caso queira
+        voltar ao tamanho de fonte original, é só clicar em A-.</p>
+        <p>Se for necessário, você também pode usar o zoom nativo do seu navegador, pressionando as teclas
+        “Ctrl” e “+” para aumentar todo o site e “Ctrl” e “-“ para diminuir. Para voltar ao padrão,
+        pressione “Ctrl” e “0”.</p>
+        <p>Este site tem melhor acessibilidade quando acessado nas versões mais atualizadas do seu navegador
+        web. Utilize sempre a versão mais recente de seu software.</p>
+        <p>Teclas de atalho por navegadores</p>
+        <p>Internet Explorer e Google Chrome:</p>          
+        <p>“Alt” + “1” - ir para o conteúdo</p>
+        <p>“Alt” + “2” - ir para o menu</p>
+        <p>“Alt” + “3” - ir para o rodapé</p>
+        <p>Firefox:</p>
+        <p>“Alt” + “Shift” + “número” Safari e OmniWeb: “Ctrl” + “número”</p>
+        <p>Opera:</p>
+        <p>“Shift” + “Escape” + “número”</p>
+        <p>Safari e OmniWeb:</p>                
+        <p>Navegação por tabulação</p>
+        <p>Use a tecla Tab para navegar por elementos que recebem ação do usuário no site, tais como links,
+        botões, campos de formulário e outros na ordem em que eles são apresentados na página, e Shift + Tab
+        para retornar. Use as setas direcionais para acessar as informações textuais.</p>
+        <p>Sugestões de programas disponíveis para pessoas com deficiência</p>
+        <p>- Nitrous Voice Flux: controla o computador por voz. Gratuito;</p>
+        <p>- NVDA: software livre para ler tela – vários idiomas (Windows);</p>
+        <p>- YeoSoft Text: leitor de tela em inglês e português;</p>
+        <p>- Jaws for Windows: leitor de tela – vários idiomas;</p>
+        <p>- Virtual Vision: leitor de telas em português do Brasil;</p>
+        <p>- DOSVOX: sistema para deficientes visuais (Windows ou Linux).</p>
+        <p>- Talckback: leitor de tela disponível em smartphones Android.</p>
+        <p>Observação: leia no manual do leitor de telas sobre a melhor forma de navegação em páginas web.<br><br>
+        <p>LIBRAS - Língua Brasileira de Sinais</p>
+        <p>Este site é acessível em LIBRAS através do <a href="http://www.vlibras.gov.br/">VLibras.</a></p>
+        <p>-Do lado direito de cada página do site existe o ícone de um Widget informando que o site é acessível em LIBRAS.</p>
+        <p>-Para traduzir, basta clicar sobre o ícone e selecionar o texto que deseja traduzir.</p>                                   
+        </section>  
+    </main>
+    <footer id="rodape">
+        <img id="logoHeader2" src="Imagem/ceeteps.png" alt="imagem com a palavra Centro Paula Souza em cinza e a imagem da bandeira do estado de São Paulo">    
+    <article class="article1">            
+        <p class="txtRodape">Fatec de Tecnologia da Zona Leste</p>
+        <p class="txtRodape">Avenida Águia de Haia, 2983</p>
+        <p class="txtRodape">(11) 2041-2187</p>
+        <p class="txtRodape">f11bili@cps.sp.gov.br</p>            
+    </article>            
+    <article class="article2">            
+        <p class="txtRodape">Atendimento</p>
+        <p class="txtRodape">Segunda á Sexta</p>
+        <p class="txtRodape">Horário:8:00 / 21:45</p>
+    </article>        
+</footer>
+<article>
+    <p id="rodapeCredito">Desenvolvido por Fábio Florêncio de Mendonça e Tales Almeida Santos &copy; 2021</p>
+</article>
+</body>
+</html>

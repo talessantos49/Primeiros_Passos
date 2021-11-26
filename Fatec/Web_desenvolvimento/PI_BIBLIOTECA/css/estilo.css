@@ -1,0 +1,518 @@
+*{margin:0; padding:0;}
+#carrossel {    
+    position: absolute;
+    width: 80;
+    height: 150px;
+    overflow: hidden;
+}
+
+#container {
+    position: absolute;
+    width: auto;
+    height: 100%;    
+    display: inline-flex;
+    transition: 0.6s ease-in-out;
+}
+
+#container #item {
+    position: relative;
+    margin: 07px;
+    width: 150px;
+    height: 100%;
+    background:#FFF;
+    z-index: 2;
+}
+
+#container #item img {
+    width: 100%;
+    height: 100%;
+}
+
+#btnleft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#btnright {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#container #limitador {
+    position: absolute;
+    margin: 0 7px;
+    width: 150px;
+    height: 100%;
+    opacity: 0;
+    right: 0;
+    z-index: 1;
+    background: blue;
+}
+/*Carrosel acima*/
+body{
+    font-size:14px;
+    display:grid;    
+}
+#top{
+    width:100%;
+    height:auto;
+    background-color:#FFF;    
+}
+#acessibilidade{
+    width:100%;
+    height:auto;
+    background-color:#3E3E3E;
+    margin:auto;
+}
+#atalhos{
+    font-family: Arial, Helvetica, sans-serif;    
+    font-size:1em;
+    list-style:none;
+    padding-left:1%;        
+}
+#atalhos li{        
+    display:inline;
+    padding-right:1%;     
+}
+#atalhos li a{
+    color:#FFF;
+}
+#atalhos li a:hover{
+    color:#3E3E3E;
+}
+#pgAcess{
+    padding-left:20%;
+}
+#logoHeader{    
+    width:20%;
+    height:auto;        
+}
+#logoHeader2{    
+    width:20%;    
+    float:right;        
+}
+#logoHeaderLogin{    
+    width:5%;    
+    margin-top:40px;
+    float:right;        
+}
+.contraste, .fonte{
+    padding-left:0px;
+}
+nav{
+    width:100%; /* Referencia o elemento pai*/
+    height:auto;
+    float:left;
+    background-color:#b00000;    
+}
+/*Exemplo de Formatação de menu "Mais fácil"*/
+#menu{ /*menu ul geral tudo que esta contido nele*/
+    list-style: none;
+    border:1px solid #FFF;
+    float:left;
+    padding-left:4%;
+}
+#menu li{/*menu li geral*/
+    position:relative;
+    float:left;
+    border-right:1px solid #FFF;
+}
+#menu li a{ /*menu li a são os itens de listas*/
+    font-family:Arial, Helvetica, sans-serif;    
+    color:#FFF;    
+    text-decoration:none;
+    padding:5px 10px;
+    display:block;
+}
+#menu li a:hover{
+    background-color:#500101;
+    transition:1s;
+}
+/*submenu*/
+#menu li ul{ 
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#b00000;
+    display:none;
+}
+#menu li:hover ul, #menu li.over ul{
+    border:1px solid #FFF;
+    display:block;
+    width:150px;
+}
+#menu li ul li{
+    display:block;
+    width:150px;
+    border:1px solid #FFF;
+    
+}
+/*menu responsivo*/
+label[for="bt_menu"]{/*seletor de atributo*/
+    display:none;
+}
+#bt_menu{
+    display:none;
+}
+.inputPesquisaAutor{
+    width:40%;
+    height:40px;    
+    color:#000;
+    font-size:1.3em;
+    margin:10px 0px 10px 109px;
+    padding-left:10px;
+    box-sizing: border-box;
+    border:5px #000 solid;
+    border-radius: 20px;
+    background-color:#F3F3F3;
+}
+.inputPesquisaVolume{
+    width:40%;
+    height:40px;    
+    color:#000;
+    font-size:1.3em;
+    margin:10px 0px 10px 95px;
+    padding-left:10px;
+    border:5px #000 solid;
+    box-sizing: border-box;
+    border-radius:20px;
+    background-color:#F3F3F3;
+}
+.inputCodBarras{
+    width:40%;
+    height:40px;    
+    color:#000;
+    font-size:1.3em;
+    margin:10px 0px 10px 10px;
+    padding-left:10px;
+    border:5px #000 solid;
+    box-sizing: border-box;
+    border-radius:20px;
+    background-color:#F3F3F3;
+}
+.inputConsultar{
+    width:40%;
+    height:40px;    
+    color:#000;
+    font-size:1.3em;
+    margin:10px 0px 10px 210px;
+    padding-left:10px;
+    box-sizing: border-box;
+    border:5px #000 solid;
+    border-radius:20px;    
+    background-color:#F3F3F3;
+}
+.inputLimpar{
+    width:40%;
+    height:40px;    
+    color:#000;
+    font-size:1.3em;
+    margin:10px 0px 10px 20px;
+    padding-left:10px;
+    box-sizing: border-box;    
+    border:5px #000 solid;
+    border-radius:20px;    
+    background-color:#F3F3F3;
+}
+
+#conteudoAdmAluno{ /*Esse id está linkado com o id de baixo observe no html*/
+    width:100%;
+    height:auto;
+    min-height:500px;
+    font-family:Arial, Helvetica, sans-serif;    
+    font-size:1em;
+    text-align:justify;  
+       
+    background-color:#3E3E3E;   
+}
+
+#conteudo{ /*Esse id está linkado com o id de baixo observe no html*/
+    width:100%;
+    height:auto;
+    min-height:700px;
+    font-family:Arial, Helvetica, sans-serif;    
+    font-size:1em;
+    text-align:justify;     
+    background-color:#3E3E3E;   
+}
+#conteudo h1{    
+    text-align:center;
+}
+h1{
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+h2{
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#conteudo_contato fieldset{
+    margin-top:10px;  
+}
+section{    
+    padding:3%;    
+}
+.teste{  
+    display:inline;  
+    float:left;  
+    width:250px;
+    height:60px;
+    text-align: center;    
+    text-decoration:none;
+    font-size:20px;
+    font-weight:0px;
+    color:black;
+    border:7px solid black;
+    border-radius:50px;
+    margin:30px 20px 0px 110px;
+    padding:10px 0px 0px 0px;
+    box-sizing:border-box;
+    background-color:white;    
+}
+
+.teste:hover{
+    color:white;
+    background-color:red;
+}
+#imagem{
+    width:40%;
+    height:auto;
+}
+#rodape{
+    width:100%;
+    height:100%;   
+    float:left;
+    font-size:1em;            
+    padding-top:20px;
+    padding-bottom:20px;
+    box-shadow:-5px 10px 100px #FFF;
+    box-sizing:border-box;    
+    background-color:#000;
+}
+#rodapeCredito{
+    width:100%;
+    height:100%;
+    margin-top:10px;
+    text-align: center;   
+    font-size:1em;          
+    font-weight:bolder;              
+    box-sizing:border-box;    
+    background-color:#FFF;
+}
+.article1{
+    float:left;
+    color:#FFF;
+    margin-top:10px;
+    margin-left:10px;
+    margin-bottom:10px;
+}
+.article2{
+    float:right;
+    color:#FFF;
+    margin:0px 380px 0px 0px;
+}
+.article3{
+    float:right;
+    color:#000;
+    margin-top:50px;
+    margin-right:10px;
+}
+
+input, select{
+    width:40%;
+    height:45px;    
+    color:#000;
+    font-size:1.3em;
+    margin:10px 0px 10px 10px;
+    padding-left:10px;
+    box-sizing: border-box;
+    border:5px solid #000 ;
+    border-radius:20px;
+    background-color:#F3F3F3;
+}
+label,legend{    
+    font-weight:bold;
+    font-size:1.2em;    
+    padding-left:10px;
+}
+fieldset{
+    border-style: groove;
+    border-radius:0px 20px 0px 20px;
+}
+textarea{
+    width:38%;
+    padding-left:10px;
+    margin-left:10px;
+}
+/*seletor de atributo -> Quando indica estilo para um valor especifico de um atributo*/
+input[type=submit]{    
+    width:15%;
+    height:40px;
+    background-color:#B00;
+    color:#FFF;
+}
+input[type=reset]{    
+    width:15%;
+    height:40px;
+    background-color:#B00;
+    color:#FFF;
+}
+.required:after{
+    content:" * ";
+    color:#F00;
+}
+.breadcrumb{
+    padding-left:2%;
+    list-style:none;
+}
+.breadcrumb li{/*Significa que estou aplicando estilo para os itens de lista da classe "breadcrumb"*/
+    display:inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.0em;
+    color:#000;
+}
+.breadcrumb li a{
+    color:#000;
+    text-decoration:none;
+}
+/*
+    Before -> Vai adicionar um conteúdo antes do item que vc está indicando no css
+    li+li -> sinal de + "siginifica um nível hierárquico" da propriedade que vc está trabalhando
+    li+li -> Ignora 1° item da lista(li) acrescenta uma "Barra" e acrescenta o próximo item da lista assim consequentemente
+*/
+.breadcrumb li+li:before{
+    content: "/\00a0";
+    padding:6px;
+    color:#FFF;
+}
+.breadcrumb li a:hover{
+    color:#FFF;
+    text-decoration:underline;
+}
+
+/* media queries
+
+   media queries menu */
+  
+@media screen and (max-width:630px){
+    #menu{
+        display:none;/*Oculta o #menu e chama label "bt_menu"*/
+    }
+    label[for="bt_menu"]{
+        display:block;        
+    }        
+    /*
+        Pseudo-classe -> checked,hover,before,after
+        ~ -> Quer dizer que quando clicar, vai fazer a intrução 
+    */
+    #bt_menu:checked ~ #menu{
+        display:block;
+        border:none;
+    }
+    #menu li{
+        position:relative;
+        float:left;
+        width:100%;
+        border:none;
+    }
+    #menu li ul{
+        position:static;
+        width:100%;
+        float:left;
+        border:none;
+    }
+    #menu li ul li{
+        position:relative;
+        display:block;
+        width:100%;
+        float:left;
+    }
+    
+}
+/*media querie barra de acessiblidade*/
+
+@media screen and (max-width:1440px){    
+    #pgAcess{
+        padding-left:30%;
+    }
+    #logoHeader{    
+        width:20%;
+        height:auto;        
+    }
+    .contraste, .fonte{
+        padding-left:0px;
+    }
+}
+@media screen and (max-width:1280px){
+    #pgacess{
+        padding-left:20%;
+    }
+}
+@media screen and (max-width:1024px){
+    #pgacess{
+        padding-left:15%;
+    }
+}
+@media screen and (max-width:630px){ /*Retira acessiblidade*/
+    ul#atalhos li{
+        display:none;
+    }
+    ul#atalhos li#pgacess{    
+        display:inline-block;
+    }
+    ul#atalhos li.contraste{        
+        display:inline-block;
+    }
+    ul#atalhos li.fonte{
+        display:inline-block;
+    }
+}
+@media screen and (max-width:420px){ /*Retira acessiblidade*/
+    #atalhos{
+        font-size:0.7em;
+    }
+    ul#atalhos li#pgacess{    
+        display:inline-block;
+        padding-left:2%;
+    }
+    ul#atalhos li.contraste{        
+        display:inline-block;
+    }
+    ul#atalhos li.fonte{
+        display:inline-block;
+    }
+}
+/*media querie de ajuste video*/
+@media screen and (max-width:630px){ 
+    #video{
+        width:60%;
+        height:auto;
+    }
+    iframe{
+        width:60%;
+        height:200px;
+    }
+}
+/*media querie de ajuste imagem*/
+@media screen and (max-width:630px){ 
+    #imagem{
+        width:70%;
+        height:auto;
+    }
+}
+
+

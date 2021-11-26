@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula Comentários,metadados, listas e layout"> 
+    <meta name="keywords" content="HTML,Comentários,Lists, Layout, Elementos Semânticos">
+    <meta name="Author" content="Fábio">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="favicon.ico" type=image/x-icon>
+    <title>Aula 5</title>
+</head>
+<body>
+    <header id="top"><!--Top da página-->
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">                    
+                Ir para o conteúdo [1]</a></li>
+                <li><a href="#menu" acceskey="2" title="Ir diretamente para o menu">
+                Ir para o menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">                    
+                Ir para o rodapé [3]</a></li>                
+
+                <li id="pgAcess"><a href="acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBLIDADE</a></li                                  >
+                <li class="contraste"><a href="javacript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+                <li class="contraste"><a href="javacript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javacript:void(0);" id="">A+</a></li>
+                <li class="fonte"><a href="javacript:void(0);" id="">A-</a></li>
+            </ul>
+        </div>
+        <img id="logoHeader" src="Imagem/fatecT.png" alt="imagem coma palavra Fatec em cinza e a expressão Zona Leste em vermelho">
+        <img id="logoHeaderLogin" src="Imagem/login-removebg-preview.png" alt="imagem com a representação de icono de login">
+        <article class="article3">
+            <p>Usuário</p>
+        </article>
+        <nav>
+            <label for="bt_menu"><img src="Imagem/botaoHamburguer1.png" alt="imagem com três barra em formato horizontal"></label> 
+            <input type="checkbox" id="bt_menu"><!--Esse menu só aparece quando diminui a janela ou dispositivo-->
+            <ul id="menu">
+                <li><a href="index.html">Início</a></li>                
+                <li><a href="javascript:void(0);">Perfil</a><!--Sub menu-->
+                    <ul>
+                        <li><a href="administrador.html">Administrador</a></li>
+                        <li><a href="usuario.html">Usuário</a></li>
+                    </ul>
+                </li>                
+                <li><a href="contato.html">Contato</a></li>                
+            </ul>    
+        </nav>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+    </header>
+    <main id="conteudo"><!-- Conteúdo principal da página-->
+        <h1>Contato</h1>
+        <ul class="breadcrumb"><!--Breadcrumb-->
+            <li><a href="index.html">Início</a></li>
+            <li>Contato</li>
+        </ul>
+        <section>
+            <form name ="contato" id="#" method="POST">
+                <fieldset>
+                    <legend>Fale conosco</legend>
+                    <label for="nome" class="required">Nome</label><br>
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required><br>                                        
+                    <label for="telefone">Telefone residencial</label><br>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(99) 9999-9999"><br>
+                    <label for="celular"class="required">Celular</label><br>
+                    <input type="tel" name="" id="celular" placeholder="(99) 99999-9999" required><br>
+                    <label for="email"class="required">E-mail</label><br>
+                    <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required><br>
+                    <label for="assunto" class="required">Assunto</label><br>   
+                    <select name="assunto" id="assunto" required>
+                        <option value="" selected disabled>Selecione um assunto</option>
+                        <option value="Dúvida">Dúvida</option>
+                        <option value="Elógio">Elógio</option>                            
+                        <option value="Reclamação"></option>
+                    </select><br>
+                    <label for="mensagem" class="required">Mensagen</label><br>
+                    <textarea name="mensagem" id="mensagem" placeholder="Digite a mensagem aqui" cols="50" rows="10"></textarea><br>
+                    <input type="submit" name="enviar" id="enviar" value="Enviar">
+                    <input type="reset" name="limpar" id="limpar" value="Limpar"><br>
+                </fieldset>                
+            </form>                                 
+        </section>
+    </main>
+    <footer id="rodape">
+        <img id="logoHeader2" src="Imagem/ceeteps.png" alt="imagem com a palavra Centro Paula Souza em cinza e a imagem da bandeira do estado de São Paulo">    
+        <article class="article1">            
+            <p class="txtRodape">Fatec de Tecnologia da Zona Leste</p>
+            <p class="txtRodape">Avenida Águia de Haia, 2983</p>
+            <p class="txtRodape">(11) 2041-2187</p>
+            <p class="txtRodape">f11bili@cps.sp.gov.br</p>            
+        </article>            
+        <article class="article2">            
+            <p class="txtRodape">Atendimento</p>
+            <p class="txtRodape">Segunda á Sexta</p>
+            <p class="txtRodape">Horário:8:00 / 21:45</p>
+        </article>        
+    </footer>
+    <article>
+        <p id="rodapeCredito">Desenvolvido por Fábio Florêncio de Mendonça e Tales Almeida Santos &copy; 2021</p>
+    </article>
+</body>
+</html>
