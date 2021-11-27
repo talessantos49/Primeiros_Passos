@@ -1,7 +1,7 @@
 *{margin:0; padding:0;}
 #carrossel {    
     position: absolute;
-    width: 80;
+    width: 97%;
     height: 150px;
     overflow: hidden;
 }
@@ -164,6 +164,7 @@ label[for="bt_menu"]{/*seletor de atributo*/
     display:none;
 }
 #bt_menu{
+    margin-top:20px;
     display:none;
 }
 .inputPesquisaAutor{
@@ -315,6 +316,7 @@ section{
 }
 .article1{
     float:left;
+    font-size:1.3em;
     color:#FFF;
     margin-top:10px;
     margin-left:10px;
@@ -322,11 +324,13 @@ section{
 }
 .article2{
     float:right;
+    font-size:1.3em;
     color:#FFF;
-    margin:0px 380px 0px 0px;
+    margin:0px 360px 0px 0px;
 }
 .article3{
     float:right;
+    font-size:1.3em;
     color:#000;
     margin-top:50px;
     margin-right:10px;
@@ -496,22 +500,169 @@ input[type=reset]{
         display:inline-block;
     }
 }
-/*media querie de ajuste video*/
-@media screen and (max-width:630px){ 
-    #video{
-        width:60%;
-        height:auto;
-    }
-    iframe{
-        width:60%;
-        height:200px;
-    }
-}
+
 /*media querie de ajuste imagem*/
 @media screen and (max-width:630px){ 
     #imagem{
         width:70%;
         height:auto;
+    }
+}
+/* Teste */
+
+@media screen and (max-width:1440px){ /* desktop */    
+    #top{
+        width:100%;
+        height:auto;
+        background-color:#FFF;    
+    }
+    #logoHeader{    
+        width:20%;
+        height:auto;        
+    }
+    #logoHeaderLogin{    
+        width:5%;  
+        height:auto;  
+        margin-top:40px;
+        float:right;        
+    }
+    .article2{
+        float:right;
+        font-size:1.3em;
+        color:#FFF;
+        margin:0px 310px 0px 0px;
+    }
+}
+
+@media screen and (max-width:1280px){ /* notebook */    
+    #top{
+        width:100%;
+        height:auto;
+        background-color:#FFF;    
+    }
+    #logoHeader{    
+        width:20%;
+        height:auto;        
+    }
+    #logoHeaderLogin{    
+        width:5%;  
+        height:auto;  
+        margin-top:40px;
+        float:right;        
+    }
+    #logoHeader2{    
+        width:20%; 
+        height:auto;   
+        float:right;        
+    }
+    .article2{
+        float:right;
+        font-size:1.3em;
+        color:#FFF;
+        margin:0px 250px 0px 0px;
+    }
+}
+
+@media screen and (max-width:1024px){     
+    #top{
+        width:100%;
+        height:auto;
+        background-color:#FFF;   
+    }
+    #logoHeader{    
+        width:20%;
+        height:auto;        
+    }
+    #logoHeaderLogin{    
+        width:5%;  
+        height:auto;  
+        margin-top:40px;
+        float:right;        
+    }
+    #logoHeader2{    
+        width:20%; 
+        height:auto;   
+        float:right;        
+    }
+    .article2{
+        float:right;
+        font-size:1.3em;
+        color:#FFF;
+        margin:0px 190px 0px 0px;
+    }
+}
+@media screen and (max-width:630px){     
+    #top{
+        width:100%;
+        height:auto;
+        background-color:#FFF;    
+    }
+    #logoHeader{    
+        width:20%;
+        height:auto;        
+    }
+    #logoHeaderLogin{    
+        width:5%;  
+        height:auto;  
+        margin-top:40px;
+        float:right;        
+    }
+    #logoHeader2{    
+        width:20%; 
+        height:auto;   
+        float:right;        
+    }
+    .article2{
+        float:right;
+        font-size:1.3em;
+        color:#FFF;
+        margin:0px 120px 0px 0px;
+    }
+}
+@media screen and (max-width:420px){     
+    #top{
+        width:100%;
+        height:auto;
+        background-color:#FFF;    
+    }
+    #logoHeader{    
+        width:30%;
+        height:auto;        
+    }
+    #logoHeaderLogin{    
+        width:7%;  
+        height:auto;  
+        margin-top:40px;
+        float:right;        
+    }
+    #logoHeader2{    
+        width:40%; 
+        height:auto;   
+        float:right;        
+    }
+    .article1{
+        float:left;
+        font-size:1em;
+        color:#FFF;
+        margin-top:10px;
+        margin-left:10px;
+        margin-bottom:10px;
+    }
+    .article2{
+        float:left;
+        font-size:1em;
+        color:#FFF;
+        margin:0px 120px 0px 10px;
+    }
+    #rodapeCredito{
+        width:100%;
+        height:100%;
+        margin-top:10px;
+        text-align: center;   
+        font-size:0.7em;          
+        font-weight:bolder;              
+        box-sizing:border-box;    
+        background-color:#FFF;
     }
 }
 

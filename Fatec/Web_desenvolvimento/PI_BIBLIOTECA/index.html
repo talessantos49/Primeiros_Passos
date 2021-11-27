@@ -2,11 +2,11 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">        
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aula Comentários,metadados, listas e layout"> 
-    <meta name="keywords" content="HTML,Comentários,Lists, Layout, Elementos Semânticos">
-    <meta name="Author" content="Fábio">
+    <meta name="description" content="Site da biblioteca da Falcudade Fatec Zona Leste"> 
+    <meta name="keywords" content="Fatec Zoma Leste, Biblioteca, Analise de sistema, Desenvolvimento de software multiplataforma, curso de programação,">
+    <meta name="Author" content="Fábio Mendonça e Tales Santos">
     <link rel="stylesheet" href="css/estilo.css">
     <script type="text/javascript" src="javascript/script.js" defer></script>
     <link rel="icon" href="favicon.ico" type=image/x-icon>
@@ -29,14 +29,14 @@
                 <li class="fonte"><a href="javacript:void(0);" id="">A+</a></li>
                 <li class="fonte"><a href="javacript:void(0);" id="">A-</a></li>
             </ul>
-        </div>
+        </div>-->
         <img id="logoHeader" src="Imagem/fatecT.png" alt="imagem com a palavra Fatec em cinza e a expressão Zona Leste em vermelho">        
         <img id="logoHeaderLogin" src="Imagem/login-removebg-preview.png" alt="imagem com a representação de icono de login">
         <article class="article3">
             <p>Usuário</p>
         </article>
         <nav>
-           <label for="bt_menu"><img src="Imagem/botaoHamburguer1.png" alt="imagem com três barra em formato horizontal"></label> 
+           <label for="bt_menu"><img src="Imagem/bars-solid.png" alt="imagem com três barra em formato horizontal"></label> 
            <input type="checkbox" id="bt_menu"><!--Esse menu só aparece quando diminui a janela ou dispositivo-->
             <ul id="menu">
                 <li><a href="index.html">Início</a></li>                                                
@@ -62,16 +62,16 @@
     </header>
     <main id="conteudo"><!-- Conteúdo principal da página-->               
         <section>                        
-            <form action="">
+            <form action="#">
                 <fieldset>
                     <legend>Pesquisa</legend>
-                    <label for="">Autor</label>
-                    <input class="inputPesquisaAutor" type="text"><br>
-                    <label for="">Volume</label>
-                    <input class="inputPesquisaVolume" type="text"><br>
-                    <label for="">Códigos de barras</label>
-                    <input class="inputCodBarras" type="text"><br>
-                    <input class="inputConsultar"type="submit" name="enviar" id="enviar" value="Consultar">
+                    <label for="autor">Autor</label>
+                    <input id="autor" class="inputPesquisaAutor" type="text"><br>
+                    <label for="volume">Volume</label>
+                    <input id ="volume" class="inputPesquisaVolume" type="text"><br>
+                    <label for="codigo">Códigos de barras</label>
+                    <input id="codigo" class="inputCodBarras" type="text"><br>
+                    <input class="inputConsultar" type="submit" name="enviar" id="enviar" value="Consultar">
                     <input class="inputLimpar" type="reset" name="limpar" id="limpar" value="Limpar"><br>
                 </fieldset>
             </form>       
