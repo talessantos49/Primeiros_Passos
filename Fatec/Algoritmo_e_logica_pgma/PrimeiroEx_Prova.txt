@@ -1,0 +1,48 @@
+Codigo em Visual G
+
+Algoritmo "Peso_ideal"
+
+Var
+   peso,altura:real
+   sexo:logico
+
+Inicio
+      escreva("Qual o seu Sexo? (Digite 0 para [M] e 1 para [F])")
+      leia(sexo)
+      escreva("Digite a sua altura: (Em Metros)")
+      leia(altura)
+
+      se sexo=0 entao
+         peso <-((72.7*altura)-58)
+      senão
+         peso <-((62.1 * altura)-44.7)
+      fimse
+      escreva("O seu peso Ideal é: ",peso)
+Fimalgoritmo
+
+
+Codigo em C
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/*PESO IDEAL*/
+
+float peso, altura;
+int sexo;
+
+int main() {
+	printf("Qual o seu Sexo? (Digite 0 para [M] e 1 para [F])\n Resposta: ");
+	scanf("%d", &sexo);
+	printf("Digite a sua altura: (Em Metros)");
+	scanf("%f", &altura);
+		
+		if (sexo==0) {
+			peso= ((72.7*altura)-58);}
+		else{
+			peso= ((62.1*altura)-44.7);
+		}
+	printf("O seu peso ideal eh : %.2f", peso);
+	
+	return 0;
+}
