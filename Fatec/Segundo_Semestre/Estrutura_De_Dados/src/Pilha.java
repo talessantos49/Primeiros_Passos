@@ -1,2 +1,12 @@
-package PACKAGE_NAME;public class Pilha {
+package estruturaestatica;
+
+public class Pilha<T> extends EstruturaEstatica<T> {
+
+    public Pilha(){
+        super();
+    }
+
+    public Pilha(int capacidade){
+        super(capacidade);
+    }
 }

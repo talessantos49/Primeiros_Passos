@@ -1,3 +1,5 @@
+package Torneio;
+
 import javax.swing.JOptionPane;
 
 public class Teste_Torneio {
