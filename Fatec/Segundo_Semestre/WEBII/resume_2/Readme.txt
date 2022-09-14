@@ -1,6 +1,7 @@
-Thanks for downloading this template!
+Hey guys, this is my resume.
 
-Template Name: DevFolio
-Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+It was a pleasure show you my skills and my shoes.
+
+All questions about my self, call me or send me a Whatsapp. +55 (11) 98604-9048
+
+Enjoy.
